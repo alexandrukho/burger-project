@@ -12,6 +12,7 @@ function get_users($db_connect)
         echo "<td>" . $rows[3] . "</td>";
         echo "</tr>";
     }
+    echo "</table>";
 }
 function get_orders($db_connect)
 {
@@ -30,6 +31,7 @@ function get_orders($db_connect)
         echo "<td>" . $rows[8] . "</td>";
         echo "</tr>";
     }
+    echo "</table>";
 }
 get_users($link);
 get_orders($link);
