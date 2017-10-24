@@ -1,0 +1,10 @@
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('dsadad.12312./3', '13', '31', '1', 2, 'some comment', 'card pay', 'callback');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('dsadad.12312./3', '13', '31', '1', 2, 'some comment', 'card pay', 'callback');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('dsadad.12312./3', '13', '31', '1', 2, 'some comment', 'odd money', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
+INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('13ddddas', '123', '313', '11', 21, 'some comment2', 'card pay', '');
