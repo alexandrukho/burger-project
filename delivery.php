@@ -51,7 +51,7 @@ if (check_user($link, $email) === true) {
 };
 $get_id = mysqli_query($link, "SELECT orders.id FROM burger.orders ORDER BY id DESC LIMIT 1")->fetch_row();
 
-$update_count = mysqli_query($link, "UPDATE burger.users SET users.counter = users.counter+1 WHERE users.email = '$email'");
+$update_count = mysqli_query($link, "UPDATE burger.users SET users.counter = users.counter + 1 WHERE users.email = '$email'");
 
 $get_count = mysqli_query($link, "SELECT burger.users.counter FROM burger.users WHERE email = '$email'")->fetch_row();
 foreach ($get_id as $id) {
