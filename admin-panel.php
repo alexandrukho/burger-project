@@ -1,4 +1,5 @@
 <?php
+include_once 'errors.php';
 $link = mysqli_connect('localhost', 'root', '', 'burger');
 function get_users($db_connect)
 {

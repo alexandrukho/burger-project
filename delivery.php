@@ -1,4 +1,5 @@
 <?php
+include_once 'errors.php';
 $name = htmlspecialchars($_POST['name']);
 $phone = htmlspecialchars($_POST['phone']);
 $email = htmlspecialchars(trim($_POST['email']));
@@ -8,8 +9,16 @@ $part = htmlspecialchars($_POST['part']);
 $appt = htmlspecialchars($_POST['appt']);
 $floor = htmlspecialchars($_POST['floor']);
 $comment = htmlspecialchars($_POST['comment']);
-$payment = $_POST['payment'];
-$callback = $_POST['callback'];
+if (isset($_POST['payment'])) {
+    $payment = $_POST['payment'];
+} else {
+    $payment = '';
+}
+if (isset($_POST['callback'])) {
+    $callback = $_POST['callback'];
+} else {
+    $callback = '';
+}
 
 $link = mysqli_connect('localhost', 'root', '', 'burger');
 
@@ -24,7 +33,10 @@ function registration($db_connect, $name, $email, $phone)
 function authorization($db_connect, $street, $home, $part, $appt, $floor, $comment, $payment, $callback)
 {
 
-    $add_order = mysqli_query($db_connect, "INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) VALUES ('$street', '$home', '$part', '$appt', '$floor', '$comment', '$payment', '$callback')");
+    $add_order = mysqli_query($db_connect,
+        "INSERT INTO burger.orders (street, home, part, appt, floor, comment, payment, callback) 
+VALUES ('$street', '$home', '$part', '$appt', '$floor', '$comment', '$payment', '$callback')"
+    );
 
 
 }
